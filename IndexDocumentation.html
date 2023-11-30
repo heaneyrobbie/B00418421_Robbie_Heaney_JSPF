@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docuemtnation</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="C:\Users\heane\Desktop\Uni Year 3\JavaScript Games T1\MyWebsite\public\CSS\style.css"> 
+
+
+
+
+
+
+
+
+</head>
+<body style="background-color:white;">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="IndexHome.html">RH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="IndexHome.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="IndexDocumentation.html">Documentation</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Elements
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="IndexElement1.html">Element 1</a></li>
+              <li><a class="dropdown-item" href="IndexElement2.html">Element 2</a></li>
+              <li><a class="dropdown-item" href="IndexElement3.html">Element 3</a></li>
+              <li><a class="dropdown-item" href="IndexElement4.html">Element 4</a></li>
+              <li><a class="dropdown-item" href="IndexElement5.html">Element 5</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Documentation</h1>
+<p>There are many different elements that make up the 5th and final element which i will run through in this documentation.
+    Element 5 consists of all other elements combined from grounds to objects with gravity and different colours.
+</p>
+<h2>Terrain</h2>
+<p>
+    The First one being the Terrain.
+    Here we have the Terrain code used within element 5 which gets the terrain from a third party source 
+    in this case Babylon Enviroments and brings it in so that it can be used as the main ground for the Element Shown below:</p>
+
+    <p>
+        largeGroundMat.diffuseTexture = new Texture("https://assets.babylonjs.com/environments/valleygrass.png");
+    
+    </p>
+    <p>After the texture is in the Height map must also be brought in to complete the Terrain for Element 5 this is done through the use of babylon resources again and like the texture done like so:</p>
+
+<p>const largeGround = 
+    MeshBuilder.CreateGroundFromHeightMap("largeGround", "https://assets.babylonjs.com/environmentsvillageheightmap.png", {width:150, height:150, subdivisions: 20, minHeight:0, maxHeight: 10});</p>
+
+<p>This is just a trial version of the Documentation to view the full version please see documentation.md file !!!!</p>
+</body>
+</html>
